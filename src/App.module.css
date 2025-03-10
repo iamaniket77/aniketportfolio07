@@ -1,0 +1,32 @@
+@import "./vars.css";
+
+.App{
+  background-color: var(--color-bg);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+
+  ::-webkit-scrollbar {
+      width: 8px; /* Narrow vertical scrollbar */
+      height: 6px; /* Narrow horizontal scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+      background: #0a0a0a; /* Dark background for contrast */
+      border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: #0ff; /* Neon Cyan */
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff; /* Neon Glow Effect */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: #0fa; /* Slightly different neon color on hover */
+      box-shadow: 0 0 15px #0fa, 0 0 25px #0fa;
+  }
+}

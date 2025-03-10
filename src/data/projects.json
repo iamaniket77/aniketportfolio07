@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Landmark Project",
+      "imageSrc": "./project/LandmarkProject.png",
+      "description": "This is a live project of Real Estate, which is about Buying & Leasing Lands from world-wide.",
+      "skills": ["Dot Net", "SQL", "C#", "Blazor"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "Appointment Schedular",
+      "imageSrc": "./project/AppointmentProject.jpg",
+      "description": "This Project is build to Eliminate the issues that occurs during manual Appointment.",
+      "skills": ["Java", "MySQL", "HTML", "CSS"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "Smart Canteen",
+      "imageSrc": "./project/CanteenProject.jpg",
+      "description": "This Project is build for College Canteen, to Avoid rush at Counter and Money Scam.",
+      "skills": ["PHP", "MySQL", "HTML", "React"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    }
+  ]

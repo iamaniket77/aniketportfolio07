@@ -1,0 +1,110 @@
+@import "../../vars.css";
+
+.navbar{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 61px;
+    z-index: 2;
+    margin: 0 10%;
+}
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: 0.5s;
+}
+.title:hover {
+    font-size: 38px;
+}
+
+.menu{
+    display: flex;
+}
+.menuBtn{
+    margin-left: 20px;
+}
+
+.menuItems{
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+
+.menuItems a {
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; 
+    position: relative;
+}
+
+/* Neon Glow Effect on Hover */
+.menuItems a:hover {
+    color: #0ff; /* Neon cyan color */
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+}
+
+/* Add an underline glow effect */
+.menuItems a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the glow line */
+    width: 100%;
+    height: 2px;
+    background-color: #0ff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menuItems a:hover::after {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 830px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu{
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+
+    .manuBtn{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuItems{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background: rgb(25, 55, 109);
+        background: linear-gradient(
+            0deg, 
+            rgba(25, 55, 109, 0.2) 0%, 
+            rgba(25, 55, 109, 1) 100%
+        );
+        padding: 24px 33px;
+        box-shadow: #0ff;
+    }
+
+    .menuOpen{
+        display: flex;
+        z-index: 1;
+    }
+}
